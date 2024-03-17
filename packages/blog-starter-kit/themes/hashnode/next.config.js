@@ -75,6 +75,15 @@ const config = {
 	async rewrites() {
 		return [
 			{
+				source: "/blog",
+				destination: "https://starter-kit-pi-lilac.vercel.app/blog", 
+			},
+			{
+				source: "/blog/:path*",
+				destination: "https://starter-kit-pi-lilac.vercel.app/blog/:path*",
+			},
+
+			{
 				source: '/ping/data-event',
 				destination: `${ANALYTICS_BASE_URL}/api/data-event`,
 			},
@@ -86,6 +95,7 @@ const config = {
 				source: '/api/collect',
 				destination: `${ADVANCED_ANALYTICS_BASE_URL}/api/collect`,
 			},
+			
 		];
 	},
 	async redirects() {
