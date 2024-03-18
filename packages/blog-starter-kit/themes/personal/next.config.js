@@ -93,11 +93,11 @@ const config = {
 		return [
 		  {
 			source: "/blog",
-			destination: "https://starter-kit-pi-lilac.vercel.app/blog", 
+			destination: "https://personal-blog-website-hashnode.vercel.app/blog", 
 		  },
 		  {
 			source: "/blog/:path*",
-			destination: "https://starter-kit-pi-lilac.vercel.app/blog/:path*",
+			destination: "https://personal-blog-website-hashnode.vercel.app/blog/:path*",
 		  },
 		];
 	  },
